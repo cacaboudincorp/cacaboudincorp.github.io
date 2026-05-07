@@ -54,6 +54,9 @@
         <p class="text-xl pt-4">
             <strong>Discord:</strong> yo&#108woocl&#101<br>
         </p>
+        <p class="text-l pt-4">
+            <a class="card-link" href="https://yolwoocle.github.io/legacy/">Legacy version of this website</a>
+        </p>
     </div>
 </div>
 

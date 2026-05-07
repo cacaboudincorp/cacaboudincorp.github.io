@@ -14,10 +14,10 @@
 	<div class="titles flex flex-col items-center -gap-1 m-4">
 		<img src="/assets/images/hileo.gif" alt="Yolwoocle character" class="select-none" style="width: 30%; max-width:180px; aspect-ratio: 0.95; object-fit: cover; object-position: top left; position: relative; transform: translateY(50px); z-index: 0">
 		<img src="/assets/images/yolwoocle_title.png" alt="Yolwoocle" class="select-none" style="width: 100%; max-width:600px; z-index: 1">
-		<p style="font-size: 40px; font-weight: 800; margin-top: -6px; margin-bottom: 14px; text-shadow: 1px 4px 0 var(--transp-shad); color: var(--main-very-dark)">
+		<p class="sm:text-[40px] text-[30px]" style="font-weight: 800; margin-top: -6px; margin-bottom: 14px; text-shadow: 1px 4px 0 var(--transp-shad); color: var(--main-very-dark)">
 			Léo Bernard • 曹宇
 		</p>
-		<p style="font-size: 30px; font-weight: 600; text-shadow: 1px 4px 0 var(--transp-shad); color: var(--main-dark)">
+		<p class="sm:text-[30px] text-[24px]" style="font-weight: 600; text-shadow: 1px 4px 0 var(--transp-shad); color: var(--main-dark)">
 			French game developer and artist
 		</p>
 		<Socials />

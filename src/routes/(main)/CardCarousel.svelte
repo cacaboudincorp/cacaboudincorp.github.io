@@ -25,9 +25,10 @@
 		<div
 			class={cn(
 				'pointer-events-auto',
-				'flex flex-col overflow-hidden',
-				'max-h-full', 
-				'overflow-scroll',
+				'flex flex-col',
+				'max-h-full',
+				'w-full',
+				'overflow-auto',
 				'm-6 p-5 rounded-3xl',
 				'shadow-[2px_8px_0px_var(--transp-shad)]'
 			)}

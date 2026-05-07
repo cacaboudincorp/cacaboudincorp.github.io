@@ -110,9 +110,9 @@
           style={`
           background-color: ${page.backgroundColor};
           box-shadow:
-            inset 0px 0px 0px 5px ${page.secondaryColor},
-            inset 0px 0px 0px 10px ${page.backgroundColor},
-            inset 0px 0px 0px 15px ${page.secondaryColor},
+            inset 0px 0px 0px var(--navbar-shadow-step-1) ${page.secondaryColor},
+            inset 0px 0px 0px var(--navbar-shadow-step-2) ${page.backgroundColor},
+            inset 0px 0px 0px var(--navbar-shadow-step-3) ${page.secondaryColor},
             0px 2px 0px ${page.shadingColor},
             0px 4px 0px ${page.shadingColor},
             0px 6px 0px ${page.shadingColor},
@@ -122,8 +122,8 @@
             color: ${page.textColor};
           `}
           class={cn(
+            'navbar-button',
             'relative',
-            'p-6 pt-16',
             'text-2xl text-center',
             'rounded-b-3xl',
             'translate-y-0',
@@ -139,7 +139,7 @@
             {@html page.icon}
             {#if !page.iconOnly}
               <div class="text flex text-center">
-                <span class="w-full hidden text-lg sm:inline"> {page.title} </span>
+                <span class="text-span w-full hidden"> {page.title} </span>
               </div>
             {/if}
           </div>
@@ -171,6 +171,12 @@
     display: none;
   }
 
+  .text-span {
+    font-size: 8px;
+    line-height: var(--tw-leading, var(--text-2xs--line-height));
+    display: inline
+  }
+
   .navbar-link-icon-only {
     flex: 0;
   }
@@ -179,7 +185,36 @@
     flex: 0;
   }
 
+  .navbar-button {
+    --navbar-shadow-step-1: 4px;
+    --navbar-shadow-step-2: 8px;
+    --navbar-shadow-step-3: 12px;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-bottom: 24px;
+    padding-top: 64px;
+  }
+
   @media (min-width: 768px) {
+    .text-span {
+      font-size: var(--text-lg) /* 1.125rem = 18px */;
+      line-height: var(--tw-leading, var(--text-lg--line-height) /* calc(1.75 / 1.125) ≈ 1.555556 */);
+      display: inline
+    }
+
+    .navbar-button {
+      --navbar-shadow-step-1: 5px;
+      --navbar-shadow-step-2: 10px;
+      --navbar-shadow-step-3: 15px;
+    }
+
+    .navbar-button {
+      padding-left: 24px;
+      padding-right: 24px;
+      padding-bottom: 24px;
+      padding-top: 64px;
+    }
+
     .items-container {
       gap: 1rem;
     }
@@ -203,7 +238,7 @@
     }
   }
 
-  @media (min-width: 900px) {
+  @media (min-width: 950px) {
     .button-content {
       display: flex;
       flex-direction: row;

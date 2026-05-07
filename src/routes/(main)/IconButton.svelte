@@ -12,7 +12,9 @@
 		href = '',
 		borderRadius = '100px',
 
-		onclick = defaultFunc
+		onclick = defaultFunc,
+		width = '65px',
+		height = '65px',
 	} = $props();
 
 	if (href && onclick !== defaultFunc) {
@@ -23,8 +25,8 @@
 </script>
 
 {#snippet buttonContent()}
-	<div class="button-container w-min">
-		<div class="button shape-round" style={`border-radius: ${borderRadius}`}>
+	<div class={`button-container w-min`}>
+		<div class="button shape-round" style={`border-radius: ${borderRadius}; width: ${width}; height: ${height}`}>
 			{#if icon}
 				<img class="icon" src={icon} {alt} />
 			{/if}
@@ -61,9 +63,6 @@
 
 		position: relative;
 		display: inline-flex;
-
-		width: 65px;
-		height: 65px;
 
 		align-items: center;
 		justify-content: center;
