@@ -1,0 +1,33 @@
+.card{
+  height: 100%;
+}
+
+.cardImageBG{
+  width: 100%;
+  margin-bottom: 20px;
+  position:static;
+  transition: all ease 0.2s;
+}
+
+.cardImage{
+  position: relative;
+  transition: all ease 0.2s;
+}
+
+.cardImageDesc{
+  color: rgba(0, 0, 0, 0);
+  position:absolute;
+  bottom: 16px;
+  left: 20px;
+  transition: all ease 0.2s;
+}
+
+.cardImage:hover .cardImageDesc{
+  font-size: 30px;
+  bottom: 35px;
+  color: rgb(255, 255, 255);
+}
+
+.cardImage:hover .cardImageBG{
+  filter: brightness(50%);
+}

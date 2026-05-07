@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'Mark';
+    src: url('Mark-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mark';
+    src: url('Mark-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0
+}
+
+body {
+    padding: 20px;
+    align-items: center;
+    background-color: #e70013;
+    display: flex;
+    font-family: Mark, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, Oxygen-Sans, Ubuntu, Cantarell, helvetica neue, sans-serif
+}
+
+.container {
+    color: #d8d8d8;
+    margin: 0 auto;
+    text-align: center
+}
+
+h1 {
+    font-weight: bold;
+    letter-spacing: .125rem;
+    text-transform: uppercase
+}
+
+h2 {
+    font-weight: normal;
+    letter-spacing: .125rem
+}
+
+li {
+    display: inline-block;
+    font-size: .9em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase
+}
+
+li span {
+    display: block;
+    font-size: 2.8rem
+}
+
+footer {
+    position: absolute;
+    bottom: 0
+}
+
+@media all and (max-width:768px) {
+    h1 {
+        font-size: 1.2rem
+    }
+
+    li {
+        font-size: 1rem;
+        padding: .75rem
+    }
+
+    li span {
+        font-size: 3rem
+    }
+}
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px
+}
+
+.left {
+    left: 0
+}
+
+.right {
+    right: 0
+}
+
+.centered {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center
+}

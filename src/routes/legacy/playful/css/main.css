@@ -1,0 +1,36 @@
+body{
+  font-family: "Roboto", Verdana;
+  background: hsl(0, 0%, 95%);
+}
+
+@font-face{
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body { 
+  height: 100%
+}
+
+.textContent{
+  display: flex;
+  display: block;
+  width: 48%;
+  margin: 1%;
+  padding: 2%;
+  background-color: white;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, .5);
+  align-self: center;
+}
+
+.pixelImg {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}

@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Zen+Maru+Gothic:wght@500;700;900&display=swap');
+@import 'tailwindcss';
+
+:root {
+	--ease-out-back-strong: cubic-bezier(0.34, 3.56, 0.64, 1);
+	--ease-out-back: cubic-bezier(0.34, 2.56, 0.64, 1);
+	--ease-out-back-soft: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+	--main-very-dark: #2b2542;
+
+	--main-dark: #32477d;
+	--main-dark-shad: #2a3264;
+	--main-dark-hightlight: #466598;
+	--main-dark-text: #779bcb;
+
+	--transp-shad: hsla(0, 0%, 0%, 0.224);
+
+	/* --green-main: #A2C18A;
+	--green-sec: #90B382; */
+	--green-main: #adcd81;
+	--green-sec: #97c787;
+	--green-sec-alt: #7fc079;
+	
+	--green-shad: #72A776;
+	--green-text: #487D72;
+
+	--yellow-main: #efe090;
+	--yellow-sec: #edc177;
+	--yellow-shad: #c78d5a;
+	--yellow-text: #bb7446;
+	--yellow-text-shad: #a64d3c;
+
+	--blue-main: #97d1c1;
+	--blue-sec: #67abb4;
+	--blue-shad: #52819f;
+	--blue-text: #426f92;
+
+	--pink-main: #eaa6a7;
+	--pink-sec: #d57487;
+	--pink-shad: #b85171;
+	--pink-text: #b85171;
+
+	--white-main: #ffffff;
+	--white-sec: #c4d0d7;
+	--white-shad: #99a0b2;
+	--white-text: #99a0b2;
+}
+
+* {
+	font-family: 'Fredoka', 'Zen Maru Gothic', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 600;
+	font-style: normal;
+	font-variation-settings: 'wdth' 100;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 700;
+}
+
+body {
+	margin: 0;
+}
+
+.card-link {
+	color: var(--pink-text);
+	
+	text-decoration: underline;
+}
+
+@theme inline {
+	--color-dark: var(--main-dark);
+	--color-dark-shadow: var(--main-dark-shad);
+	--color-dark-hightlight: var(--main-dark-hightlight);
+	--color-dark-foreground: var(--main-dark-text);
+
+	--color-transp-shadow: var(--transp-shad);
+
+	--color-green: var(--green-main);
+	--color-green-secondary: var(--green-sec);
+
+	--color-yellow: var(--yellow-main);
+	--color-yellow-secondary: var(--yellow-sec);
+	--color-yellow-shadow: var(--yellow-shad);
+	--color-yellow-foreground: var(--yellow-text);
+	--color-yellow-foreground-shadow: var(--yellow-text-shad);
+
+	--color-blue: var(--blue-main);
+	--color-blue-secondary: var(--blue-sec);
+	--color-blue-shadow: var(--blue-shad);
+	--color-blue-foreground: var(--blue-text);
+
+	--color-pink: var(--pink-main);
+	--color-pink-secondary: var(--pink-sec);
+	--color-pink-shadow: var(--pink-shad);
+	--color-pink-foreground: var(--pink-text);
+
+	--color-white: var(--white-main);
+	--color-white-secondary: var(--white-sec);
+	--color-white-shadow: var(--white-shad);
+	--color-white-foreground: var(--white-text);
+}
